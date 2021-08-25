@@ -1,11 +1,3 @@
-/**
- * @author Nikita Mittal
- * @email nikitamittal2423@gmail.com
- * @create date 2021-08-24 16:25:56
- * @modify date 2021-08-24 16:25:56
- * @desc [description]
- */
-
 import {
   LineChart,
   CartesianGrid,
@@ -42,7 +34,6 @@ const PopulationViewV1 = ({}) => {
           <YAxis />
           <Tooltip
             formatter={(value, name, props) => {
-              console.log("Value", value, name, props);
               return props.payload.actualPopulation;
             }}
           />

@@ -1,11 +1,3 @@
-/**
- * @author Nikita Mittal
- * @email nikitamittal2423@gmail.com
- * @create date 2021-08-24 00:05:51
- * @modify date 2021-08-24 00:05:51
- * @desc [description]
- */
-
 export const API_URL =
   "https://datausa.io/api/data?drilldowns=Nation&measures=Population";
 

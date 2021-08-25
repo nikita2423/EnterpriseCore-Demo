@@ -22,7 +22,7 @@ export const getPopulationTableData = (state, props) => {
   const tableList = [];
   yearList.forEach((year) => {
     const populationData = populationObj[year];
-    if (!populationData.isDisabled) {
+    if (!populationData.isHidden) {
       tableList.push({
         year: populationData.Year.value,
         population: populationData.Population.value,

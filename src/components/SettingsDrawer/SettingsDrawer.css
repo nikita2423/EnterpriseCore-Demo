@@ -1,43 +1,53 @@
-.form-labels{
-    width: 100px !important;
-    margin: 5px !important;
+.form-labels {
+  width: 100px !important;
+  margin: 5px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.input-group{
-    width: auto !important;
+.input-group {
+  width: auto !important;
 }
 
-.button-toolbar{
-    display: flex !important;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 10px 0 10px 0;
+.button-toolbar {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0 10px 0;
 }
 
-.toggle-button{
-    margin-bottom: 0 !important;
+.toggle-button {
+  margin-bottom: 0 !important;
 }
 
-.update-form{
-    margin:10px
+.update-form {
+  margin: 10px;
 }
 
-.collapse-button{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.collapse-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.add-object-button{    
-    width: calc(100% - 40px);
-    margin: 20px;
+.add-object-button {
+  width: calc(100% - 40px);
+  margin: 20px;
 }
 
-.each-collapse-panel{
-    background-color: #0005;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px
+.each-collapse-panel {
+  background-color: #0005;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group-api-url {
+  margin: 0 20px 0 20px;
+  width: calc(100% - 40px);
+  margin-bottom: 30px;
+  height: 45px;
 }

@@ -11,6 +11,7 @@ import {
   ControlLabel,
   Toggle,
   Icon,
+  Tag,
 } from "rsuite";
 import { dispatchUpdatePopulation } from "../../model/dispatch";
 
@@ -34,7 +35,8 @@ const Panel = ({ ...props }) => (
 );
 
 const CollapsableMenu = (parentProps) => {
-  const { isOpen, handleCollapseToggle, heading, children } = parentProps;
+  const { isOpen, handleCollapseToggle, heading, children, isHidden } =
+    parentProps;
   return (
     <div className="collapsable-menu">
       <Button className="collapse-button" onClick={handleCollapseToggle}>
@@ -42,6 +44,7 @@ const CollapsableMenu = (parentProps) => {
           <h6>
             <code>ID Year: {heading}</code>
           </h6>
+          {isHidden && <Tag color="red">Hidden</Tag>}
         </>
         <Icon icon={isOpen ? "chevron-down" : "chevron-right"} />
       </Button>
@@ -102,6 +105,7 @@ const ConfigurationForm = ({ data = {}, year = 2021 }) => {
       <CollapsableMenu
         heading={year}
         isOpen={isOpen}
+        isHidden={isHidden}
         handleCollapseToggle={handleCollapseToggle}
       >
         {allKeys.map((eachKey, index) => {
@@ -130,7 +134,7 @@ const ConfigurationForm = ({ data = {}, year = 2021 }) => {
                   size="md"
                   checkedChildren="Enabled"
                   unCheckedChildren="Hidden"
-                  onChange={() => {
+                  onChange={(v) => {
                     setIsHidden(!v);
                   }}
                 />

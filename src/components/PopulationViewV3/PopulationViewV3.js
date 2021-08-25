@@ -13,12 +13,16 @@ const PopulationViewV3 = () => {
   return (
     <Table height={400} data={tableData} bordered cellBordered width={300}>
       <Column width={100} align="center" fixed>
-        <HeaderCell>Year</HeaderCell>
+        <HeaderCell>
+          <h5>Year</h5>
+        </HeaderCell>
         <Cell dataKey="year" />
       </Column>
 
       <Column width={200} fixed>
-        <HeaderCell>Population</HeaderCell>
+        <HeaderCell>
+          <h5>Population</h5>
+        </HeaderCell>
         <Cell dataKey="population" />
       </Column>
     </Table>
