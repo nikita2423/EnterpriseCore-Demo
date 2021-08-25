@@ -1,0 +1,43 @@
+.form-labels{
+    width: 100px !important;
+    margin: 5px !important;
+}
+
+.input-group{
+    width: auto !important;
+}
+
+.button-toolbar{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 0;
+}
+
+.toggle-button{
+    margin-bottom: 0 !important;
+}
+
+.update-form{
+    margin:10px
+}
+
+.collapse-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-object-button{    
+    width: calc(100% - 40px);
+    margin: 20px;
+}
+
+.each-collapse-panel{
+    background-color: #0005;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px
+}

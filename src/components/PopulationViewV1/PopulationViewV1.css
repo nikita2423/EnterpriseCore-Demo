@@ -1,0 +1,48 @@
+.recharts-surface {
+  overflow: visible;
+}
+
+.recharts-cartesian-axis-tick {
+  width: 100%;
+}
+
+tspan {
+  white-space: pre;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chart {
+  &__yAxis {
+    &_labels {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      min-width: 100px;
+      text-transform: capitalize;
+    }
+    &_label {
+      cursor: pointer;
+
+      &--has-active {
+        font-weight: 600;
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+  }
+}
+
+.css-15i6xvo-multiValue {
+  border-radius: 0px !important;
+}
+
+.recharts-legend-wrapper {
+  bottom: unset !important;
+}
+
+.recharts-tooltip-label {
+  color: #777 !important;
+}

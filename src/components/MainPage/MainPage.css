@@ -1,0 +1,17 @@
+.main-container {
+  height: 100vh;
+  padding: 30px;
+}
+
+.main-body {
+  background-color: #292d33;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.main-page-container {
+  margin-left: 80px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}

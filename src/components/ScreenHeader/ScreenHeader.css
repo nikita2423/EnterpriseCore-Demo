@@ -1,0 +1,20 @@
+.screen-heading {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.screen-heading-text {
+  flex: 1;
+}
+
+.settings-button {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.settings-dropdown-container {
+  margin-right: 20px;
+}

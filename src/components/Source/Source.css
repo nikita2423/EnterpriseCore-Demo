@@ -1,0 +1,13 @@
+.source-container {
+  width: 500px;
+}
+
+.source-list-item-header-container {
+  margin-top: 10px;
+  color: #777;
+}
+
+.source-list-item-value-container {
+  font-size: 16px;
+  /* font-weight: bold; */
+}
