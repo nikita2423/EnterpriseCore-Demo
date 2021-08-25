@@ -39,15 +39,13 @@ const PopulationViewV1 = ({}) => {
           }}
         >
           <XAxis dataKey="name" />
-          <YAxis
-            tickFormatter={(tick) => {
-              if (tick !== 0) {
-                return parseInt(Math.log(tick));
-              }
-              return tick;
+          <YAxis />
+          <Tooltip
+            formatter={(value, name, props) => {
+              console.log("Value", value, name, props);
+              return props.payload.actualPopulation;
             }}
           />
-          <Tooltip />
           <Legend />
           <Line
             type="monotone"

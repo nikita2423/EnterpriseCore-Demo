@@ -7,7 +7,10 @@ export const getPopulationChartData = (state, props) => {
     if (!populationData.isHidden) {
       lineChartList.push({
         name: populationData.Year.value,
-        population: populationData.Population.value,
+        population: Math.round(
+          Math.log10(populationData.Population.value) * 10
+        ),
+        actualPopulation: populationData.Population.value,
       });
     }
   });

@@ -20,14 +20,19 @@ const PopulationViewV2 = () => {
     >
       <XAxis dataKey="name" />
       <YAxis
-        tickFormatter={(tick) => {
-          if (tick !== 0) {
-            return parseInt(Math.log(tick));
-          }
-          return tick;
+      // tickFormatter={(tick) => {
+      //   if (tick !== 0) {
+      //     return Math.round(Math.log10(tick) * 10);
+      //   }
+      //   return tick;
+      // }}
+      />
+      <Tooltip
+        formatter={(value, name, props) => {
+          console.log("Value", value, name, props);
+          return props.payload.actualPopulation;
         }}
       />
-      <Tooltip />
       <Legend />
       <Bar dataKey="population" fill="#8884d8" />
     </BarChart>
